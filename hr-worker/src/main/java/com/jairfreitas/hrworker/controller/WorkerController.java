@@ -22,7 +22,7 @@ public class WorkerController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<Worker> findBuId(@PathVariable Long id){
+    public ResponseEntity<Worker> findById(@PathVariable Long id){
         return ResponseEntity.ok().body(service.findById(id));
     }
 }
